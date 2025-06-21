@@ -54,8 +54,7 @@ Plot the distribution of positive and negative reviews.
 
 ## How to Run This Project
 
-1. **Clone the Repository**:
+**Clone the Repository**:
    ```bash
-  git clone https://github.com/Gowry11/CodeClauseInternship-Analyze-sentiment-in-movie-reviews-1-.git
-
+   git clone https://github.com/Gowry11/CodeClauseInternship-Analyze-sentiment-in-movie-reviews-1-.git
 
