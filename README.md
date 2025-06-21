@@ -2,7 +2,6 @@
 
 A beginner-friendly NLP project for classifying movie reviews as positive or negative using NLTK and machine learning. Includes text preprocessing, TF-IDF vectorisation, logistic regression classification, and optional K-Means clustering. Built as part of the **CodeClause Data Science Internship**.
 
----
 
 ## What This Project Does
 
@@ -12,7 +11,6 @@ A beginner-friendly NLP project for classifying movie reviews as positive or neg
 - Optionally uses **K-Means Clustering** to group reviews without labels.
 - Includes visualisations to understand data distribution.
 
----
 
 ## Technologies Used
 
@@ -22,7 +20,6 @@ A beginner-friendly NLP project for classifying movie reviews as positive or neg
   - [Scikit-learn](https://scikit-learn.org/) – for machine learning models and vectorisation
   - [Matplotlib](https://matplotlib.org/) & [Seaborn](https://seaborn.pydata.org/) – for visualization
 
----
 
 ## Project Structure
 
@@ -50,7 +47,6 @@ Try to group reviews into 2 clusters using **unsupervised learning** and compare
 ### 7. Visualization
 Plot the distribution of positive and negative reviews.
 
----
 
 ## How to Run This Project
 
