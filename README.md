@@ -1,56 +1,75 @@
-# CodeClauseInternship-Analyze-sentiment-in-movie-reviews
+# CodeClauseInternship-Analyze-Sentiment-in-Movie-Reviews
 
-A beginner-friendly NLP project for classifying movie reviews as positive or negative using NLTK and machine learning. Includes text preprocessing, TF-IDF vectorisation, logistic regression classification, and optional K-Means clustering. Built as part of the **CodeClause Data Science Internship**.
-
+A beginner-friendly NLP + Machine Learning project for analyzing sentiment in movie reviews. This project uses text preprocessing, TF-IDF vectorisation, and a Logistic Regression model to classify movie reviews as either positive or negative. Built as part of the CodeClause Data Science Internship.
 
 ## What This Project Does
 
-- Uses Natural Language Processing (NLP) techniques to analyse the sentiment of movie reviews.
-- Classifies reviews as either **positive** or **negative** using a Logistic Regression model.
-- Applies **TF-IDF Vectorisation** to transform text into numerical features.
-- Optionally uses **K-Means Clustering** to group reviews without labels.
-- Includes visualisations to understand data distribution.
-
+- Classifies movie reviews as **positive** or **negative**.
+- Uses Natural Language Processing (NLP) techniques to clean and process text.
+- Converts raw review text into numerical features using **TF-IDF**.
+- Trains a **Logistic Regression** classifier on the data.
+- Evaluates model performance using accuracy and a classification report.
+- Bonus: Applies **K-Means Clustering** to group reviews into clusters.
+- Includes visualization of sentiment distribution using Seaborn.
 
 ## Technologies Used
 
-- **Programming Language**: Python  
-- **Libraries & Tools**:
-  - [NLTK](https://www.nltk.org/) – for natural language processing
-  - [Scikit-learn](https://scikit-learn.org/) – for machine learning models and vectorisation
-  - [Matplotlib](https://matplotlib.org/) & [Seaborn](https://seaborn.pydata.org/) – for visualization
-
+- Programming Language: Python  
+- Libraries & Tools:
+  - [NLTK](https://www.nltk.org/) – for text preprocessing (tokenization, stopwords, lemmatization)
+  - [Scikit-learn](https://scikit-learn.org/) – for vectorization, classification, evaluation, and clustering
+  - [Matplotlib](https://matplotlib.org/) & [Seaborn](https://seaborn.pydata.org/) – for visualizing results
 
 ## Project Structure
 
 ### 1. Import Libraries & Load Dataset
-We use Python libraries like `nltk`, `sklearn`, and `matplotlib`. We load the dataset `movie_reviews` from NLTK.
+The dataset used is the **movie_reviews** corpus available via the NLTK library. Each review is labeled as either `pos` (positive) or `neg` (negative).
 
 ### 2. Preprocess the Text
-- Convert text to lowercase
-- Remove punctuation and stopwords
-- Apply lemmatisation to reduce words to their base form
+- Convert to lowercase
+- Remove punctuation
+- Tokenize using NLTK
+- Remove stopwords
+- Lemmatize using WordNetLemmatizer
 
-### 3. Convert Text to Numbers (TF-IDF)
-Text is converted into numerical form using TF-IDF so that it can be used by machine learning algorithms.
+### 3. Vectorize the Text (TF-IDF)
+Text data is transformed into numerical feature vectors using **TF-IDF** with a maximum of 5000 features.
 
-### 4. Train a Sentiment Classifier
-- Split the dataset into training and testing sets
-- Use **Logistic Regression** for classification
+### 4. Train Classifier
+- **Logistic Regression** is used to classify the reviews.
+- The dataset is split into training and testing sets.
+- Accuracy and classification report are printed after evaluation.
 
-### 5. Evaluate the Model
-Check model performance using the accuracy score and the classification report.
+### 5. Apply K-Means Clustering (Bonus)
+- Unsupervised K-Means clustering is applied to the same data.
+- A confusion matrix is shown to compare actual vs. clustered labels.
 
-### 6. Bonus: K-Means Clustering
-Try to group reviews into 2 clusters using **unsupervised learning** and compare with actual labels.
+### 6. Visualize Sentiment Distribution
+- Uses Seaborn to plot the distribution of positive and negative reviews.
 
-### 7. Visualization
-Plot the distribution of positive and negative reviews.
+## Sample Results
 
+- **Accuracy** (Logistic Regression): ~85–90%
+- **Classification Report** shows precision, recall, F1-score
+- **K-Means Confusion Matrix** gives a rough clustering overview
 
 ## How to Run This Project
 
 **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Gowry11/CodeClauseInternship-Analyze-sentiment-in-movie-reviews-1-.git
+```bash
+git clone https://github.com/Gowry11/CodeClauseInternship-Analyze-Sentiment-in-Movie-Reviews-1-.git
+```
+**Run the Notebook**:
+- Open Sentiment_Analysis_CodeClause.ipynb in Jupyter Notebook
+- Run all cells step-by-step from top to bottom
+
+ ## Concepts Covered
+- Basics of NLP and text preprocessing
+- Using TF-IDF to convert text into features
+- Building a simple yet effective ML model
+- Understanding classification performance using precision, recall, F1-score
+- Applying basic clustering to explore unsupervised learning
+
+## Developed By  
+Gowry P P
 
